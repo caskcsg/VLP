@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
     - Download CC-3M (see https://ai.google.com/research/ConceptualCaptions/download)
     - Put CC3M videos under `video_dataset/cc3m`;
-    - Change `data/cc3m/txt/cc3m.json` with local image paths.
+    - Change `video_dataset/cc3m/txt/cc3m.json` with local image paths.
  
 2. Download raw videos of downstream datasets.
 

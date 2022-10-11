@@ -21,9 +21,7 @@ pip install -r requirements.txt
     - Download WebVid-2M (see https://github.com/m-bain/webvid)
     - Put WebVid2M videos under `video_dataset/WebVid`;
     
-
     - Download CC-3M (see https://ai.google.com/research/ConceptualCaptions/download)
-    - Put CC3M videos under `video_dataset/cc3m`;
     - Change `video_dataset/cc3m/txt/cc3m.json` with local image paths.
  
 2. Download raw videos of downstream datasets.
@@ -48,7 +46,7 @@ pip install -r requirements.txt
        - Following [instructions](https://github.com/LisaAnne/LocalizingMoments/blob/master/README.md) and download from the official release [here](https://drive.google.com/drive/u/1/folders/1_oyJ5rQiZboipbMl6tkhY8v0s9zDkvJc);
        - unzip all the videos into `video_dataset/DiDeMo/videos`.
        - Note there might be a couple videos missing. See [here](https://github.com/LisaAnne/LocalizingMoments/blob/master/README.md#getting-the-videos) to download. However, as they account for a small portion of training set, you may feel safe to ignore.
-       - Convert all the DiDeMo videos into `*.mp4` format using e.g. [`ffmpeg`](https://askubuntu.com/questions/396883/how-to-simply-convert-video-files-i-e-mkv-to-mp4).
+       <!-- - Convert all the DiDeMo videos into `*.mp4` format using e.g. [`ffmpeg`](https://askubuntu.com/questions/396883/how-to-simply-convert-video-files-i-e-mkv-to-mp4). -->
 
     - LSDMC:
       - You must obtain permission from MPII to download and use the data. The download link is [here](https://sites.google.com/site/describingmovies/download).
@@ -71,7 +69,7 @@ pip install -r requirements.txt
     |---DiDeMo/videos
     |---msvd/videos
     ```
-## Download officail Checkpoints
+## Download official Checkpoints
 
   ```bash
   # pretrain Checkpoint

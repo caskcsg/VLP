@@ -2,7 +2,7 @@
 
 ## Rap: Redundancy-aware Video-language Pre-training for Text-Video Retrieval
 
-<img src="Rap.png" width="500">
+<img src="Rap.png">
 
 Official PyTorch code for Rap. This repository supports pre-training as well as finetuning on 
 - Text-Video Retrieval on MSRVTT, DiDeMo, MSVD and LSMDC.

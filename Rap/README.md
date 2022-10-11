@@ -122,6 +122,9 @@ Get the zero-shot result
   ```
 
 ## Finetuning
+
+During the fine-tuning stage, we perform our experiment on 8 NVIDIA V100 GPUs. We sparsely sample 4 frames and resize them to the same video frame size(256*256) as the pre-training stage. The learning rate is initialized as 1e-5. For each benchmark dataset, we select a checkpoint according to the results of the validation split and inference the checkpoint on the test split. For MSRVTT9K without a validation split, we train the model for 10 epochs and choose the final checkpoint.
+
 Set eval=0 to finetune pretrain checkpoint
   ```bash
   bash run_retrieval.sh msrvtt7k rap_pretrain.pth 0

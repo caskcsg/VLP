@@ -139,7 +139,6 @@ Set eval=0 to finetune pretrain checkpoint
 
 
 ## Acknowledgement
-We thank members at Salesforce Research for their helpful discussions.
 
 The implementation of Rap relies on resources from [ALRPO](https://github.com/salesforce/ALPRO), [ClipBERT](https://github.com/jayleicn/ClipBERT),[BLIP](https://github.com/salesforce/BLIP),
 [TCL](https://github.com/uta-smile/TCL), The code is implemented using [PyTorch](https://github.com/pytorch/pytorch), We thank the original authors for their open-sourcing and encourage Rap users to cite their works when applicable.

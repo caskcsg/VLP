@@ -1,0 +1,19 @@
+video_root: 'video_dataset/msvd/videos' #local path to video data msvd
+
+
+vit: 'base'
+batch_size_train: 15
+batch_size_test: 128
+k_test: 128
+num_frm_test: 8
+num_frm_train: 4
+vit_grad_ckpt: True
+vit_ckpt_layer: 4
+image_size: 256
+queue_size: 57600
+alpha: 0.4
+negative_all_rank: False
+
+weight_decay: 0.05
+min_lr: 0
+max_epoch: 30

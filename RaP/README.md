@@ -1,10 +1,10 @@
-# Rap (EMNLP 22')
+# RaP (EMNLP 22')
 
-## Rap: Redundancy-aware Video-language Pre-training for Text-Video Retrieval
+## RaP: Redundancy-aware Video-language Pre-training for Text-Video Retrieval
 
-<img src="Rap_arch.png" width="750">
+<img src="RaP_arch.png" width="750">
 
-Official PyTorch code for Rap. This repository supports pre-training as well as finetuning on 
+Official PyTorch code for RaP. This repository supports pre-training as well as finetuning on 
 - Text-Video Retrieval on MSRVTT, DiDeMo, MSVD and LSMDC.
 
 ## Requirements
@@ -73,15 +73,15 @@ pip install -r requirements.txt
 
   ```bash
   # pretrain Checkpoint
-  wget https://huggingface.co/ffgcc/Rap_checkpoint/resolve/main/rap_pretrain.pth
+  wget https://huggingface.co/ffgcc/RaP/resolve/main/rap_pretrain.pth
   # msrvtt7k finetune Checkpoint
-  wget https://huggingface.co/ffgcc/Rap_checkpoint/resolve/main/rap_msrvtt7k_finetune.pth
+  wget https://huggingface.co/ffgcc/RaP/resolve/main/rap_msrvtt7k_finetune.pth
   # didemo finetune Checkpoint
-  wget https://huggingface.co/ffgcc/Rap_checkpoint/resolve/main/rap_didemo_finetune.pth
+  wget https://huggingface.co/ffgcc/RaP/resolve/main/rap_didemo_finetune.pth
   # msvd finetune Checkpoint
-  wget https://huggingface.co/ffgcc/Rap_checkpoint/resolve/main/rap_msvd_finetune.pth
+  wget https://huggingface.co/ffgcc/RaP/resolve/main/rap_msvd_finetune.pth
   # lsmdc finetune Checkpoint
-  wget https://huggingface.co/ffgcc/Rap_checkpoint/resolve/main/rap_lsmdc_finetune.pth
+  wget https://huggingface.co/ffgcc/RaP/resolve/main/rap_lsmdc_finetune.pth
   ```
 
 ## Inference with Official Checkpoints
@@ -117,7 +117,7 @@ Get the zero-shot result
 ## Pretraining 
 
   ```bash
-  #We use 64 V100 (CUDA=11.1) train Rap. Here is a test script. You can change it to a multi-node version.
+  #We use 64 V100 (CUDA=11.1) train RaP. Here is a test script. You can change it to a multi-node version.
   bash test_pretrain.sh
   ```
 
@@ -140,6 +140,6 @@ Set eval=0 to finetune pretrain checkpoint
 
 ## Acknowledgement
 
-The implementation of Rap relies on resources from [ALRPO](https://github.com/salesforce/ALPRO), [ClipBERT](https://github.com/jayleicn/ClipBERT),[BLIP](https://github.com/salesforce/BLIP),
-[TCL](https://github.com/uta-smile/TCL), The code is implemented using [PyTorch](https://github.com/pytorch/pytorch), We thank the original authors for their open-sourcing and encourage Rap users to cite their works when applicable.
+The implementation of RaP relies on resources from [ALRPO](https://github.com/salesforce/ALPRO), [ClipBERT](https://github.com/jayleicn/ClipBERT),[BLIP](https://github.com/salesforce/BLIP),
+[TCL](https://github.com/uta-smile/TCL), The code is implemented using [PyTorch](https://github.com/pytorch/pytorch), We thank the original authors for their open-sourcing and encourage RaP users to cite their works when applicable.
 
